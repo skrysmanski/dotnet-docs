@@ -20,6 +20,14 @@ Multiple target frameworks (notice the property changes from "TargetFramework" t
 
 Possible target framework names: <https://docs.microsoft.com/en-us/dotnet/standard/frameworks#latest-versions>
 
+## Create Link to Multiple Files
+
+Use `LinkBase`:
+
+```xml
+<EmbeddedResource Include="..\..\..\Demo\**\*.cs" LinkBase="Resources" />
+```
+
 ## List All Targets, Properties, And Environment Variables
 
 To list all MSBuild targets, properties, and environment variables for a build, build with logging **Diagnostic** (`/v:d`).
