@@ -28,6 +28,14 @@ Use `LinkBase`:
 <EmbeddedResource Include="..\..\..\Demo\**\*.cs" LinkBase="Resources" />
 ```
 
+## Import other MSBuild File
+
+Imports `Project.Shared.props` from any parent folder:
+
+```xml
+<Import Project="$([MSBuild]::GetPathOfFileAbove('Project.Shared.props', '$(MSBuildThisFileDirectory)'))" />
+```
+
 ## Common MSBuild Properties
 
 For a full list, see:
