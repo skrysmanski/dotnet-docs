@@ -28,6 +28,26 @@ Use `LinkBase`:
 <EmbeddedResource Include="..\..\..\Demo\**\*.cs" LinkBase="Resources" />
 ```
 
+## Common MSBuild Properties
+
+For a full list, see:
+
+* <https://docs.microsoft.com/en-us/visualstudio/msbuild/common-msbuild-project-properties>
+
+### General
+
+* `$(MSBuildThisFileDirectory)`: The directory of the current file (.csproj, .targets, .props, ...)
+
+* `$(OutputPath)`: The relative output path (e.g. `bin\Debug`) - same as `$(OutDir)`
+* `$(TargetPath)`: The fully qualified path to the output file.
+* `$(TargetName)`: The name of the target file without file extension (and without path).
+* `$(TargetFileName)`: The name of the target file with file extension (but without path).
+
+### For NuGet Packages
+
+* `$(PackageId)`: Name of the NuGet package
+* `$(PackageVersion)`: Version of the NuGet package
+
 ## List All Targets, Properties, And Environment Variables
 
 To list all MSBuild targets, properties, and environment variables for a build, build with logging **Diagnostic** (`/v:d`).
