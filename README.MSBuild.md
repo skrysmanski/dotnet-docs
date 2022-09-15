@@ -1,5 +1,11 @@
 # MSBuild and .csproj
 
+## Project Types
+
+Official names: **SDK-style** (modern), **non-SDK-style** (legacy)
+
+Documentation: <https://docs.microsoft.com/en-us/nuget/resources/check-project-format>
+
 ## Target Framework(s)
 
 One target framework:
