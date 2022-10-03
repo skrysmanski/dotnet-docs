@@ -4,7 +4,7 @@
 
 NuGet Packages: `Microsoft.Extensions.DependencyInjection.Abstractions` or `Microsoft.Extensions.DependencyInjection`
 
-"Manual" approach (i.e. without `HostBuilder`):
+"Manual" approach (i.e. without [`IHostBuilder`](README.GenericHost.md)):
 
 ```c#
 // Create service collection for registering all services
